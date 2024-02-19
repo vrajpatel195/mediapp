@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mediapp/consts/consts.dart';
 import 'package:mediapp/res/components/custom_textfield.dart';
-import 'package:mediapp/views/home/home_view.dart';
-import 'package:mediapp/views/signup_view/signup_view.dart';
 
 import '../../consts/images.dart';
 import '../../res/components/custom_button.dart';
 
-class LoginView extends StatelessWidget {
-  const LoginView({super.key});
+class SignupView extends StatelessWidget {
+  const SignupView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,39 +25,33 @@ class LoginView extends StatelessWidget {
               ),
               10.heightBox,
               AppStyle.bold(
-                  title: AppStrings.welcomeBack, size: AppSizes.size18),
-              AppStyle.bold(title: AppStrings.weAreExcited),
+                  title: AppStrings.signupNow,
+                  size: AppSizes.size18,
+                  alignment: TextAlign.center),
             ],
           ),
-          20.heightBox,
+          30.heightBox,
           Expanded(
               child: Form(
                   child: SingleChildScrollView(
             child: Column(
               children: [
+                CustomTextField(hint: AppStrings.fullname),
+                10.heightBox,
                 CustomTextField(hint: AppStrings.email),
                 10.heightBox,
                 CustomTextField(hint: AppStrings.password),
                 20.heightBox,
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: AppStyle.normal(title: AppStrings.forgotpassword),
-                ),
-                20.heightBox,
-                CustomButton(
-                    buttonText: AppStrings.login,
-                    onTap: () {
-                      Get.to(() => const HomeView());
-                    }),
+                CustomButton(buttonText: AppStrings.signup, onTap: () {}),
                 20.heightBox,
                 Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                  AppStyle.normal(title: AppStrings.dontHaveAccount),
+                  AppStyle.normal(title: AppStrings.alreadyHaveAccount),
                   8.widthBox,
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => const SignupView());
+                      Get.back();
                     },
-                    child: AppStyle.bold(title: AppStrings.signup),
+                    child: AppStyle.bold(title: AppStrings.login),
                   ),
                 ])
               ],

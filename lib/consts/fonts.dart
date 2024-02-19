@@ -5,25 +5,35 @@ class AppFonts {
 }
 
 class AppSizes {
-  static const size12 = 12,
-      size14 = 14,
-      size16 = 16,
-      size18 = 18,
-      size20 = 20,
-      size22 = 22,
-      size34 = 34;
+  static const size12 = 12.0,
+      size14 = 14.0,
+      size16 = 16.0,
+      size18 = 18.0,
+      size20 = 20.0,
+      size22 = 22.0,
+      size34 = 34.0;
 }
 
 class AppStyle {
-  static normal({String? title, Color? color = Colors.black, double? size}) {
+  static normal(
+      {String? title,
+      Color? color = Colors.black,
+      double? size = 14,
+      TextAlign alignment = TextAlign.left}) {
     return title!.text.size(size).color(color).make();
   }
 
-  static bold({String? title, Color? color = Colors.black, double? size}) {
+  static bold(
+      {String? title,
+      Color? color = Colors.black,
+      double? size = 14,
+      TextAlign alignment = TextAlign.left}) {
     return title!.text
         .size(size)
         .color(color)
         .fontFamily(AppFonts.nunitoBold)
+        .fontWeight(FontWeight.bold)
+        .align(alignment)
         .make();
   }
 }
