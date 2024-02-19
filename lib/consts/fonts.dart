@@ -16,10 +16,14 @@ class AppSizes {
 
 class AppStyle {
   static normal({String? title, Color? color = Colors.black, double? size}) {
-    title!.text.size(size).color(color).make();
+    return title!.text.size(size).color(color).make();
   }
 
   static bold({String? title, Color? color = Colors.black, double? size}) {
-    title!.text.size(size).color(color).fontFamily(AppFonts.nunitoBold).make();
+    return title!.text
+        .size(size)
+        .color(color)
+        .fontFamily(AppFonts.nunitoBold)
+        .make();
   }
 }
