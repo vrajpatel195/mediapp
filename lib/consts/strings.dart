@@ -1,3 +1,5 @@
+import 'package:mediapp/consts/consts.dart';
+
 class AppStrings {
   static String appname = "Mediapp",
       bestDocapp = "Best Doctor\n Appointment App",
@@ -13,7 +15,15 @@ class AppStrings {
       confirmPassword = "Confirm Password",
       forgotpassword = "Forgot Password?",
       login = "Login",
+      search = "Search doctor",
       signup = "Signup",
+      welcome = "Welcome",
       alreadyHaveAccount = "Already have an account?",
-      dontHaveAccount = "Don't have an account?";
+      dontHaveAccount = "Don't have an account?",
+      body = "Body",
+      ear = "Ear",
+      liver = "Liver",
+      lungs = "Lungs",
+      heart = "Heart",
+      kidney = "Kidney";
 }
