@@ -7,6 +7,7 @@ import 'package:mediapp/views/signup_view/signup_view.dart';
 
 import '../../consts/images.dart';
 import '../../res/components/custom_button.dart';
+import '../home/home.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -49,7 +50,7 @@ class LoginView extends StatelessWidget {
                 CustomButton(
                     buttonText: AppStrings.login,
                     onTap: () {
-                      Get.to(() => const HomeView());
+                      Get.to(() => const Home());
                     }),
                 20.heightBox,
                 Row(mainAxisAlignment: MainAxisAlignment.center, children: [
