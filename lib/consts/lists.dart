@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:mediapp/consts/images.dart';
 import 'package:mediapp/consts/strings.dart';
 
@@ -18,3 +19,11 @@ var iconsTitleList = [
   AppStrings.heart,
   AppStrings.kidney,
 ];
+
+var settingsList = [
+  AppStrings.changePassword,
+  AppStrings.termsConditions,
+  AppStrings.signout,
+];
+
+var settingsListIcon = [Icons.lock, Icons.note, Icons.logout];

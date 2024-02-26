@@ -28,5 +28,8 @@ class AppStrings {
       liver = "Liver",
       lungs = "Lungs",
       heart = "Heart",
-      kidney = "Kidney";
+      kidney = "Kidney",
+      changePassword = "Change Password",
+      termsConditions = "Terms & Conditions",
+      signout = "Signout";
 }
