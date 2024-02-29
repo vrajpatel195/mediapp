@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:mediapp/consts/consts.dart';
 import 'package:mediapp/res/components/custom_button.dart';
+import 'package:mediapp/views/book_appoinment_view/book_appoinment_view.dart';
 
 class DoctorProfileView extends StatelessWidget {
   const DoctorProfileView({super.key});
@@ -143,7 +145,11 @@ class DoctorProfileView extends StatelessWidget {
       ),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(10.0),
-        child: CustomButton(buttonText: "Book an appointment", onTap: () {}),
+        child: CustomButton(
+            buttonText: "Book an appointment",
+            onTap: () {
+              Get.to(() => const BookAppointmentView());
+            }),
       ),
     );
   }
