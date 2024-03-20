@@ -19,7 +19,6 @@ class _HomeState extends State<Home> {
     const HomeView(),
     const AppointmentView(),
     const CategoryView(),
-    const LoginView(),
     const SettingsView(),
   ];
 
@@ -48,7 +47,6 @@ class _HomeState extends State<Home> {
                 icon: Icon(Icons.book), label: "Appointments"),
             BottomNavigationBarItem(
                 icon: Icon(Icons.category), label: "Category"),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Doctor"),
             BottomNavigationBarItem(
                 icon: Icon(Icons.settings), label: "Settings"),
           ]),
